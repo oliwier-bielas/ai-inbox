@@ -1,0 +1,121 @@
+[
+    {
+        "sender": "orders@gamezone-store.com",
+        "subject": "Invoice #GZ-2026-1187 for your GTA VI pre-order",
+        "body": "Hi Oliwier, thanks for your order! Attached is the invoice for your GTA VI Deluxe Edition pre-order. The remaining balance of $40 must be paid by Friday or the pre-order will be cancelled.",
+        "is_read": false
+    },
+    {
+        "sender": "kuba.nowak@gmail.com",
+        "subject": "GTA VI night this weekend?",
+        "body": "Yo! Saturday night, my place, GTA VI marathon. I'll get pizza, you bring the second controller. Let me know by Thursday so I know how much food to order.",
+        "is_read": false
+    },
+    {
+        "sender": "deals@gamezone-store.com",
+        "subject": "Black Week: 30% off GTA VI merch and accessories",
+        "body": "This week only! Grab hoodies, posters and limited-edition controllers inspired by GTA VI at 30% off. Free shipping on orders over $50.",
+        "is_read": true
+    },
+    {
+        "sender": "mentor@ai-bootcamp.dev",
+        "subject": "URGENT: our mentoring call moved to tomorrow 9:00",
+        "body": "Hi Oliwier, I have to move our call to tomorrow at 9:00. Please send me your FastAPI repo link and a short list of questions before 8:30 so I can prepare a code review.",
+        "is_read": false
+    },
+    {
+        "sender": "billing@cloudgpu.io",
+        "subject": "Payment failed for your GPU instance",
+        "body": "We could not charge your card for the November GPU usage ($12.40). Please update your payment method today, otherwise your instance and stored models will be deleted in 24 hours.",
+        "is_read": false
+    },
+    {
+        "sender": "community@ai-engineers.dev",
+        "subject": "Invitation: online meetup on RAG in production",
+        "body": "Join our monthly online meetup next Wednesday at 18:00 CET. Topics: chunking strategies, hybrid search and evaluating RAG systems. Reply to save your spot.",
+        "is_read": true
+    },
+    {
+        "sender": "newsletter@llm-weekly.com",
+        "subject": "LLM Weekly #142: new open-weight models and agent frameworks",
+        "body": "This week: a roundup of new small open-weight models, a comparison of agent frameworks and a tutorial on structured outputs with Pydantic.",
+        "is_read": true
+    },
+    {
+        "sender": "kuba.nowak@gmail.com",
+        "subject": "Did you see the new GTA VI trailer??",
+        "body": "Dude, the new trailer is insane, the city looks so real. Watch it and tell me what you think. Also, how is your AI course going? Still learning Python?",
+        "is_read": false
+    },
+    {
+        "sender": "courses@learn-ai.dev",
+        "subject": "Last chance: 50% off the AI Engineer course",
+        "body": "Our AI Engineer course with RAG, agents and fine-tuning modules is 50% off until midnight. Don't miss it!",
+        "is_read": false
+    },
+    {
+        "sender": "kuba.nowak@gmail.com",
+        "subject": "Can you help me with my CV?",
+        "body": "Hey, I'm applying for a junior backend role next week. Could you look at my CV and GitHub on Sunday? I'll buy you a coffee :)",
+        "is_read": true
+    },
+    {
+        "sender": "mentor@ai-bootcamp.dev",
+        "subject": "Feedback on your inbox project",
+        "body": "",
+        "is_read": false
+    },
+    {
+        "subject": "Reminder: GTA VI release party",
+        "body": "Don't forget about the release party on Friday at 20:00!",
+        "is_read": false
+    },
+    {
+        "sender": "alerts@company-monitoring.com",
+        "subject": "CRITICAL: payment API returning 500 errors",
+        "body": "Since 14:05 the payment API has been returning 500 errors for 35% of requests. On-call engineers are investigating. Please check the incident channel and do not deploy anything until further notice.",
+        "is_read": false
+    },
+    {
+        "sender": "tomasz.wisniewski@company.com",
+        "subject": "PR #318 waiting for your review",
+        "body": "Hi, could you review my pull request with the new email filtering endpoint before the end of the day? It's blocking the release planned for tomorrow morning.",
+        "is_read": false
+    },
+    {
+        "sender": "manager@company.com",
+        "subject": "1:1 meeting on Monday",
+        "body": "Let's have our regular 1:1 on Monday at 11:00. I'd like to talk about your goals for next quarter and your interest in the AI team.",
+        "is_read": true
+    },
+    {
+        "sender": "scrum-master@company.com",
+        "subject": "Sprint planning moved to Thursday 10:00",
+        "body": "Sprint planning is moved from Wednesday to Thursday at 10:00 because half of the team is at a conference. Please estimate your tickets in Jira before the meeting.",
+        "is_read": false
+    },
+    {
+        "sender": "hr@company.com",
+        "subject": "Your vacation request has been approved",
+        "body": "Your vacation request for 22–29 December has been approved. Remember to set an out-of-office message and hand over your tasks before you leave.",
+        "is_read": true
+    },
+    {
+        "sender": "it-security@company.com",
+        "subject": "Your password expires in 2 days",
+        "body": "Your company password will expire in 2 days. Please change it in the employee portal to avoid losing access to your email and VPN.",
+        "is_read": false
+    },
+    {
+        "sender": "finance@company.com",
+        "subject": "Please submit your B2B invoice for November",
+        "body": "Reminder: contractors should send their invoices for November by the 5th of December. Invoices sent later will be paid in the next payment cycle.",
+        "is_read": false
+    },
+    {
+        "sender": "devops@company.com",
+        "subject": "Planned maintenance: staging environment on Saturday",
+        "body": "The staging environment will be unavailable on Saturday from 01:00 to 05:00 due to database upgrades. Production is not affected.",
+        "is_read": true
+    }
+]
