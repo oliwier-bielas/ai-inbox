@@ -7,9 +7,9 @@ router = APIRouter(prefix="/emails", tags=["emails"])
 
 @router.get("")
 def get_all_emails() -> list[EmailRead]:
-    pass
+    return emails_service.get_all()
 
 
 @router.get("/{email_id}")
-def get_email_by_id() -> EmailRead:
-    pass
+def get_email_by_id(email_id: int) -> EmailRead:
+    return emails_service.get_by_id(email_id)
