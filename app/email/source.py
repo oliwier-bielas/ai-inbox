@@ -14,13 +14,12 @@ class JSONEmailSource:
         with open(path, "r", encoding="utf-8") as file:
             emails: list[dict] = json.load(file)
             validated_emails: list[dict] = []
-
-            try:
-                for email in emails:
+            for email in emails:
+                try:
                     self._validate_emails(email)
                     validated_emails.append(email)
-            except InvalidEmailError as e:
-                logger.warning(e)
+                except InvalidEmailError as e:
+                    logger.warning(e)
 
             return list(self._map_emails(validated_emails))
 
@@ -37,5 +36,5 @@ class JSONEmailSource:
 
     def _map_emails(self, emails: list[dict]) -> list[EmailRead]:
         mapped_emails: list[EmailRead] = [EmailRead(id=index, **email)
-                                          for index, email in enumerate(emails)]
+                                          for index, email in enumerate(emails, start=1)]
         return mapped_emails
