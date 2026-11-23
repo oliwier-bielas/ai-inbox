@@ -4,7 +4,7 @@ from typing import Literal
 
 class EmailAnalysisLLM(BaseModel):
     category: Literal["invoice", "meeting", "promotion", "other"]
-    priority: Literal["low", "medium", "hight"]
+    priority: Literal["low", "medium", "high"]
     summary: str = Field(max_length=150)
 
 
