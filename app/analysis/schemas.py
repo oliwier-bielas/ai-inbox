@@ -8,5 +8,5 @@ class EmailAnalysisLLM(BaseModel):
     summary: str = Field(max_length=150)
 
 
-class EmailAnalysisLMMRead(EmailAnalysisLLM):
-    email_id: int
+class EmailAnalysisRead(EmailAnalysisLLM):
+    id: int
