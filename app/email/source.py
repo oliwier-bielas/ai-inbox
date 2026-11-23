@@ -3,6 +3,7 @@ import json
 import logging
 from .schemas import EmailRead
 from .invalid_email import InvalidEmailError
+from app.config import settings
 
 logger: logging.Logger = logging.getLogger(__name__)
 
@@ -24,8 +25,7 @@ class JSONEmailSource:
             return list(self._map_emails(validated_emails))
 
     def _get_emails_path(self) -> Path:
-        DATA_DIR: Path = Path(__file__).parents[2] / "data"
-        path: Path = DATA_DIR / "emails.json"
+        path: Path = settings.data_dir / "emails.json"
         return path
 
     def _validate_emails(self, email: dict) -> dict:

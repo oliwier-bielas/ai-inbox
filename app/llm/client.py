@@ -1,11 +1,7 @@
-import os
-
-from dotenv import load_dotenv
 from openai import OpenAI
-
-load_dotenv()
+from app.config import settings
 
 client = OpenAI(
-    base_url=os.getenv("LLM_BASE_URL"),
-    api_key=os.getenv("LLM_API_KEY")
+    base_url=settings.llm_base_url,
+    api_key=settings.llm_api_key
 )

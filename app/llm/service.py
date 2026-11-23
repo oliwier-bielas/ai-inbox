@@ -1,6 +1,6 @@
 from pydantic import BaseModel
 from .client import client
-import os
+from app.config import settings
 
 
 class LLMService():
@@ -8,7 +8,7 @@ class LLMService():
         message = [{"role": "SYSTEM", "message": user_prompt}]
         print(message)
         result = client.responses.create(
-            model=os.getenv("LLM_MODEL"),
+            model=settings.llm_model,
             instructions=system_prompt,
             input=user_prompt
         )
