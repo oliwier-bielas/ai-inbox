@@ -9,3 +9,7 @@ class AppError(Exception):
 
 class NotFoundError(AppError):
     status_code = 404
+
+
+class ServiceUnavailableError(AppError):
+    status_code = 503
