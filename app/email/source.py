@@ -23,7 +23,7 @@ class JSONEmailSource:
                 except ValidationError as e:
                     logger.warning(f"Warning: skipping invalid email: {e}")
 
-            return list()
+            return list(mapped_emails)
 
     def _get_emails_path(self) -> Path:
         path: Path = settings.data_dir / "emails.json"

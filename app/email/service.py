@@ -1,6 +1,6 @@
 from .schemas import EmailRead
 from .source import JSONEmailSource
-from .exceptions import EmailNotFound
+from .exceptions import EmailNotFoundError
 
 
 class EmailService:
@@ -14,8 +14,8 @@ class EmailService:
         email: EmailRead | None = next(
             (email for email in self._emails if email.id == email_id), None)
 
-        if email == None:
-            raise EmailNotFound
+        if email is None:
+            raise EmailNotFoundError(email_id)
 
         return email
 
