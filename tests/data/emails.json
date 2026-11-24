@@ -1,0 +1,25 @@
+[
+  {
+    "sender": "billing@example.com",
+    "subject": "Invoice #TEST-001",
+    "body": "Please pay the attached invoice of $100 by Friday.",
+    "is_read": false
+  },
+  {
+    "sender": "manager@example.com",
+    "subject": "Team meeting tomorrow at 10:00",
+    "body": "Let's meet tomorrow at 10:00 to discuss the sprint plan.",
+    "is_read": true
+  },
+  {
+    "sender": "deals@example.com",
+    "subject": "50% off this weekend",
+    "body": "Big weekend sale on all products. Don't miss it!",
+    "is_read": false
+  },
+  {
+    "subject": "Missing sender",
+    "body": "This email has no sender and should be skipped.",
+    "is_read": false
+  }
+]
