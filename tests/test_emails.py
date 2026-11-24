@@ -11,6 +11,7 @@ client = TestClient(app)
 def test_get_emails() -> None:
     res = client.get("/emails")
     assert res.status_code == 200
+    assert len(res.json()) == 3
     assert TypeAdapter(list[EmailRead]).validate_python(res.json())
 
 
