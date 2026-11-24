@@ -19,15 +19,18 @@ def test_get_email_by_existing_id() -> None:
     res = client.get(f"/emails/{email_id}")
 
     assert res.status_code == 200
-    assert EmailRead.model_validate(res.json())
 
-    email = EmailRead(**res.json())
-
-    assert email.id == email_id
+    assert res.json() == {
+        "id": 1,
+        "sender": "billing@example.com",
+        "subject": "Invoice #TEST-001",
+        "body": "Please pay the attached invoice of $100 by Friday.",
+        "is_read": False,
+    }
 
 
 def test_get_email_by_fake_id() -> None:
     email_id = 99
     res = client.get(f"/emails/{email_id}")
     assert res.status_code == 404
-    assert res.json() == {"details": EmailNotFoundError(email_id).message}
+    assert res.json() == {"detail": EmailNotFoundError(email_id).message}
