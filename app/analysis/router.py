@@ -1,6 +1,8 @@
 from fastapi import APIRouter
-from .service import analysis_service
+
 from .schemas import EmailAnalysisRead
+from .service import analysis_service
+
 router = APIRouter(prefix="/emails", tags=["analysis"])
 
 

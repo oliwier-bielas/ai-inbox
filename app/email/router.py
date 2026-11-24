@@ -1,4 +1,5 @@
 from fastapi import APIRouter
+
 from .schemas import EmailRead
 from .service import emails_service
 

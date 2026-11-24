@@ -1,15 +1,17 @@
-from pathlib import Path
 import json
 import logging
-from .schemas import EmailRead
-from app.config import settings
+from pathlib import Path
+
 from pydantic import ValidationError
+
+from app.config import settings
+
+from .schemas import EmailRead
 
 logger: logging.Logger = logging.getLogger(__name__)
 
 
 class JSONEmailSource:
-
     def load(self) -> list[EmailRead]:
         path: Path = self._get_emails_path()
         with open(path, "r", encoding="utf-8") as file:
