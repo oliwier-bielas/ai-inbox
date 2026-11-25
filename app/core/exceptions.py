@@ -13,3 +13,7 @@ class NotFoundError(AppError):
 
 class ServiceUnavailableError(AppError):
     status_code = 503
+
+
+class BadGatewayError(AppError):
+    status_code = 502
